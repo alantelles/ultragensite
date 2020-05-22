@@ -1,0 +1,77 @@
+@media screen and (min-width: 900px) {
+    .code {
+        font-size: 1.2em;
+    }
+    .super {
+        width: calc(100vw - 12px);
+    }
+    .site-display h2 {
+        font-size: 2em;
+    }
+    .display {
+        font-size: 8em;
+    }
+    .site-display {
+        margin-top: 70px;
+    }
+    .navbar li {
+        font-size: 2em;
+    }
+    .navbar a, .li-fill {
+        padding: 10px;
+    }
+    .teasers-grid {
+        width: 94vw;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        align-content: center;
+        gap: 1em;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        border-top: solid 2px whitesmoke;
+    }
+    .teasers {
+        display: block;
+        width: 100%; height: 300px;
+        
+    }
+    .container-grid {
+        width: 94vw;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        align-content: center;
+        gap: 1em;
+    }
+    .container-grid .container {
+        display: block;
+        width: 100%; height: 230px;
+    }
+    footer.container, footer.container p, footer.container h3 {
+        text-align: center;
+    }
+    footer.container h3 {
+        font-size: 3.5em;
+    }
+    .big-to-left {
+        text-align: left !important;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .teasers-grid, .container-grid, .container {
+        max-width: 1300px;
+    }
+    .super {
+        max-width: 100vw;
+    }
+    .teasers {
+        display: block;
+        height: 280px;
+    }
+    .container-grid .container {
+        display: block;
+        width: 100%; height: 180px;
+    }
+    .super h3 {
+        font-size: 3.5em;
+    }
+}

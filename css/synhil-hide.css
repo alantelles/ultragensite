@@ -1,0 +1,9 @@
+.code-toggler {
+    cursor: pointer;
+}
+.code-toggler:hover {
+    text-decoration: underline;
+}
+.accordion {
+    display: none;
+}

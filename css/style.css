@@ -1,0 +1,147 @@
+body {
+    font-family: 'Sen', sans-serif;
+    background-color: rgb(109, 23, 23);
+    background-size: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p {
+    font-size: 1.2em;
+}
+a {
+    transition: 
+        color 300ms,
+        background-color 300ms,
+        text-shadow 300ms;
+}
+.site-display {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+}
+.display {
+    font-size: 5em;
+    font-weight: normal;
+    font-family: 'Sen', sans-serif;
+}
+.display-2 {
+    font-size: 2.5em;
+}
+.display-3 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+.navbar {
+    position: fixed;
+    top: 0; left: 0;
+    display: flex;
+    width: 100vw;
+    background-color: rgb(43, 11, 11);
+    border-bottom: solid 1px rgb(170, 51, 51)
+}
+.navbar ul {
+    display: flex;
+    width:100%;
+    list-style-type: none;
+    justify-content: center;
+}
+.navbar li {
+    display: block;
+}
+.navbar a, .li-fill {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(43, 11, 11);
+    padding: 10px;
+    transition: background-color 300ms, color 300ms;
+}
+.navbar a:hover, .navbar a:active {
+    /* background-color: rgb(77, 27, 27); */
+    color: rgb(77, 27, 27);
+    background-color: rgb(216, 213, 213);
+}
+.teasers {
+    background-color: rgba(255, 255, 255, 0.13);
+    display: flex;
+    flex-direction: column;
+    width: 94vw;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.teaser-icon i {
+    padding-bottom: 18px;
+    width: 100%;
+    font-size: 3em;
+    text-align: center
+}
+.hilite {
+    color: rgb(53, 4, 4);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90vw;
+    margin-top: 15px;
+    
+}
+.super {
+    width: 100vw;
+    background-color: rgb(250, 242, 231);
+    padding: 20px;
+}
+.super h3 {
+    color: rgb(109, 23, 23);
+}
+.container h3 {
+    text-align: center;
+}
+.container p {
+    text-align: justify;
+    padding: 10px;
+}
+.container a {
+    color: rgb(252, 204, 204);
+    text-decoration: none;
+}
+.container a:hover, .container a:active {
+    color: #fff;
+    text-decoration: underline;
+}
+.container ul {
+    padding: 10px;
+    margin-left: 30px;
+}
+.container li {
+    font-size: 1.4em;
+}
+footer.container, footer.container p, footer.container h3 {
+    text-align: left;
+}
+footer.container h3 {
+    font-size: 1.8em;
+    border-bottom: solid 1px rgb(109, 23, 23);
+}
+footer.container a {
+    color: black;
+}
+footer.container a:hover, footer.container a:active {
+    color: #290909;
+    text-decoration: underline;
+}
+footer.container small {
+    text-align: center;
+    font-size: 1em
+}
+.social-icon {
+    font-size: 2em;
+}
+a:hover > .social-icon {
+    text-shadow: 2px 2px 3px rgb(100, 73, 73);
+}

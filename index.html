@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraGen</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/big_screen.css">
+    <link rel="stylesheet" href="./css/single.css">
+    <link rel="stylesheet" href="./css/syntax-hilite.css">
+    <link rel="stylesheet" href="./css/synhil-hide.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Sen&display=swap" rel="stylesheet">
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/e24afa3c0d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-menu">
+        <nav class="navbar">
+            <ul>
+                
+                <li class="li-fill">Mais informações em breve!</li>
+                <!--
+                <li id="home-menu"><a href="#">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#">Tutorial</a></li>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Downloads</a></li>
+                -->
+                
+            </ul>
+        </nav>
+    </div>
+    <header class="site-display">
+        <h1 class="display">UltraGen</h1>
+        <h2 class="serif">The website machine</h2>
+    </header>
+    <div class="teasers-grid">
+        <div class="teasers">
+            <div class="teaser-icon"><i class="fas fa-question-circle"></i></div>
+            <h3 class="display-3 serif">Cansado de ambientes complexos?</h3>
+            <p>Por que levar uma tonelada pra casa quando se precisa de gramas?</p>
+        </div>
+        <div class="teasers">
+            <div class="teaser-icon"><i class="fas fa-thumbs-up"></i></i></div>
+            <h3 class="display-3 serif">Você se pergunta se criar sites poderia ser mais fácil?</h3>
+            <p>Como já foi um dia...</p>
+        </div>
+        <div class="teasers">
+            <div class="teaser-icon"><i class="fas fa-cubes"></i></div>
+            <h3 class="display-3 serif">Sente falta de uma tecnologia que se integre a outras facilmente?</h3>
+            <p>Deixar as partes difíceis guardadas e só usar quando necessário?</p>
+        </div>
+    </div>
+    <div id="about" class="container super">
+        <h3 class="display-2">Então <span class="hilite">UltraGen</span> é para você!</h3>
+    </div>
+    <div class="container-grid">
+        <div class="container">
+            <h3 class="display-2 serif bottom-line big-to-left">Sobre</h3>
+            <p>UltraGen é uma linguagem simples de fácil deploy para criar sites que foca em processamento de templates sem deixar em falta recursos para obter dados de um banco de dados ou através de uma API REST.</p>
+        </div>
+        <div class="container">
+            <h3 class="display-2 serif bottom-line big-to-left">Features</h3>
+            <ul>
+                <li>Fácil de aprender</li>
+                <li>Utilidades comuns de desenvolvimento web embutidas</li>
+                <li>Flexibilidade para desenvolver</li>
+                <li>Outros usos para processamento de texto</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h3 class="display-2 serif bottom-line big-to-left">Sintaxe</h3>
+
+        <p><span class="code-toggler" id="hello-world">Hello, World!</span></p>
+        <pre class="code accordion" id="hello-world-code">
+<span class="line"><span class="comment"># O "#" define um comentário de uma linha</span></span>
+<span class="line"><span class="comment"># Abaixo temos um suposto "nome do script"</span></span>
+<span class="line"><span class="comment"># Scripts UltraGen utilizam a extensão .ultra</span></span>
+<span class="line"><span class="comment"># hello.ultra</span></span>
+<span class="line"><span class="proc">print:</span> <span class="str">"Hello, World!"</span></pre>
+
+        <p><span class="code-toggler" id="variaveis">Variáveis</span></p>
+        <pre class="code accordion" id="variaveis-code">
+<span class="line"><span class="comment"># vars.ultra</span></span>
+<span class="line"><span class="var">a</span> <span class="opers">=</span> <span class="str">"Eu sou uma variável"</span>
+<span class="line"><span class="proc">print:</span> <span class="var">a</span></pre>
+
+        <p><span class="code-toggler" id="interpola">Interpolação em texto plano</span></p>
+        <pre class="code accordion" id="interpola-code">
+<span class="line"><span class="comment"># interpolation.ultra.txt</span></span>
+<span class="line"><span class="comment"># Quando não se utiliza a extensão .ultra o script é identificado como texto plano</span></span>
+<span class="line"><span class="comment"># E você pode utilizar uma sintaxe especial para embutir código UltraGen no texto</span></span>
+<span class="line">Esta é uma linha de texto plano</span>
+<span class="line"><span class="opers">@</span><span class="var">inter</span> <span class="opers">=</span> <span class="str">"Este texto aparecerá por 'interpolação'"</span>
+<span class="line">O caractere "@" declara uma linha de código dentro do texto plano</span>
+<span class="line">E o resultado é: <span class="inter">{{</span> <span class="var">inter</span> <span class="inter">}}</span>
+<span class="line"><span class="comment">###</span></span>
+<span class="line"><span class="comment">OBS: 3 "#" iniciam um bloco de comentário</span></span>
+<span class="line"><span class="comment">E aqui o que será impresso: </span></span>
+<span class="line"><span class="comment">Esta é uma linha de texto plano</span></span>
+<span class="line"><span class="comment">O caractere "@" declara uma linha de código UltraGen dentro do texto plano</span></span>
+<span class="line"><span class="comment">E o resultado é: Este texto aparecerá por 'interpolação'</span></span>
+<span class="line"><span class="comment">OBS: 3 "#" e um "!" finalizam um bloco de comentário</span></span>
+<span class="line"><span class="comment">Você pode salvar este arquivo gerado executando "ultragen interpolation.ultra.txt --persist"</span></span>
+<span class="line"><span class="comment">###!</span></span></pre>
+
+        <p><span class="code-toggler" id="iteration">Iterando por <span class="italic">listables</span></span></p>
+        <pre class="code accordion" id="iteration-code">
+<span class="line"><span class="var">list</span> <span class="opers">=</span> <span class="str">"alguns,itens,separados,por,vírgula"</span>
+<span class="line"><span class="proc">for:</span> <span class="var">list</span>, <span class="var">l</span>
+    <span class="line"><span class="comment"># l é a variável de controle e o índice pode ser acessado por l.i</span></span>
+    <span class="line"><span class="proc">print:</span> <span class="str">"item "</span>, <span class="var">l.i</span>, <span class="str">": "</span>, <span class="var">l</span>
+<span class="line"><span class="proc">endFor</span></span>
+<span class="line"><span class="comment">###</span></span>
+<span class="line"><span class="comment">item 0: alguns</span></span>
+<span class="line"><span class="comment">item 1: itens</span></span>
+<span class="line"><span class="comment">item 2: separados</span></span>
+<span class="line"><span class="comment">item 3: por</span></span>
+<span class="line"><span class="comment">item 4: vírgula</span></span>
+<span class="line"><span class="comment">###!</span></span>
+
+<span class="line"><span class="var">unordered</span> <span class="opers">=</span> <span class="str">"foo|bar|zika|mahailo|baholeros"</span>
+<span class="line"><span class="comment"># Especificando o separador no for</span></span>
+<span class="line"><span class="comment"># Declarando a ordenação da iteração</span></span>
+<span class="line"><span class="proc">for:</span> <span class="var">unordered</span>, <span class="var">l</span>, <span class="str">"|"</span>, <span class="str">"ASC"</span>
+    <span class="line"><span class="proc">print:</span> <span class="str">"item "</span>, <span class="var">l.i</span>, <span class="str">": "</span>, <span class="function">upper</span>(<span class="var">l</span>)</span>
+<span class="line"><span class="proc">endFor</span></span>
+<span class="line"><span class="comment">###</span></span>
+<span class="line"><span class="comment">item 0: BAHOLEROS</span></span>
+<span class="line"><span class="comment">item 1: BAR</span></span>
+<span class="line"><span class="comment">item 2: FOO</span></span>
+<span class="line"><span class="comment">item 3: MAHAILO</span></span>
+<span class="line"><span class="comment">item 4: ZIKA</span></span>
+<span class="line"><span class="comment">###!</span></span></pre>
+
+        <p><span class="code-toggler" id="json-res">Obtendo um recurso JSON</span></p>
+        <pre class="code accordion" id="json-res-code">
+<span class="line"><span class="var">data</span> <span class="opers">=</span> <span class="function">sendGet</span>(<span class="str">"http://someapi.com/post/20"</span>)</span>
+<span class="line"><span class="proc">parseJson:</span> <span class="str">"post"</span>, <span class="var">data</span></span>
+<span class="line"><span class="comment"># O recurso obtido estará disponível como um dicionário gen</span></span>
+<span class="line"><span class="comment"># Você pode referenciar seus valores como mostrado abaixo</span></span>
+<span class="line"><span class="proc">print: </span><span class="objkey">$</span><span class="objkey">post</span><span class="objvalue">.title</span></span></pre>
+    </div>
+
+    
+    <div class="container">
+        <h3 class="display-2 serif bottom-line">Interessado?</h3>
+        <p class="align-center">Navegue pela <a href="http://ultragen.com.br" target="_blank">documentação</a> do projeto.</p>
+        <p class="align-center">Subscreva-se no GitHub e seja notificado das atualizações</p>
+        <!--
+        <p>Inicie nosso <a href="#">tutorial</a></p>
+        <p>Leia a <a href="#">documentação</a> neste site</p>
+        <p><a href="#">Baixe UltraGen</a> para seu SO</p>
+        <p>Visite o projeto no <a target="_blank" href="http://github.com/alantelles/ultragen">GitHub</a></p>
+        <p>Veja as páginas de <a href="#">exemplos</a></p>
+        -->
+    </div>
+    <footer class="container super">
+        <h3 class="bottom-line">UltraGen</h3>
+        <p class="serif black">. desktop/web<br>. script language<br>. template engine</p>
+        <p class="black align-center"><a href="https://github.com/alantelles/ultragen"><i class="fab fa-github-alt social-icon"></i></a></p>
+        <small class="serif black">. feito com <a target="_blank" href="http://lazarus-ide.org">Lazarus/Free Pascal</a></small>
+        <small class="serif black">. created by <a target="_blank" href="http://github.com/alantelles">Alan Telles</a></small>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

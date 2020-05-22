@@ -1,0 +1,36 @@
+.code {
+    background-color: rgb(31, 36, 36);
+    padding: 15px;
+    
+    overflow-y: auto;
+}
+.code .line {
+    padding: 0px;
+    margin: 0 10px 0 0;
+}
+.code .proc {
+    color: burlywood;
+}
+.code .var, .code .objvalue {
+    color: rgb(32, 204, 235);
+}
+.code .opers {
+    color: rgb(255, 248, 181);
+}
+.code .str {
+    color: rgb(207, 141, 207);
+    font-weight: bold;
+}
+.code .inter {
+    color: chartreuse;
+    font-weight: bold;
+}
+.code .comment {
+    color: rgb(89, 133, 133);
+}
+.code .function {
+    color: aqua;
+}
+.code .objkey {
+    color: rgb(78, 184, 17)
+}
