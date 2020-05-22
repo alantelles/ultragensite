@@ -7,3 +7,6 @@
 .accordion {
     display: none;
 }
+#hello-world-code {
+    display: block;
+}

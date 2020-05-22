@@ -5,7 +5,7 @@ jsonCall.addEventListener('click', function () {
     jsonCode.style.setProperty('display', 'block');
 })
 */
-var shown = ""
+var shown = "hello-world-code"
 var suffix = "-code"
 var codeTogglers = document.querySelectorAll(".code-toggler")
 for (let i = 0; i < codeTogglers.length; i++) {

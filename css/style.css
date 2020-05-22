@@ -102,6 +102,9 @@ a {
 .container h3 {
     text-align: center;
 }
+.container h3 > small {
+    font-size: 0.4em;
+}
 .container p {
     text-align: justify;
     padding: 10px;
